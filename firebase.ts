@@ -5,10 +5,10 @@ import { getFirestore } from "firebase/firestore";
 
 // 從 Firebase Console 複製來的設定
 const firebaseConfig = {
-  apiKey: "AIzaSyBzIuGIG4jmUe146rexK51UNvA2dn3xnT8",   // ✅ 注意這裡大小寫
+  apiKey: "AIzaSyBzIuGIG4jmUe146rexK51UNvA2dn3xnT8",
   authDomain: "fir-f51b8.firebaseapp.com",
   projectId: "fir-f51b8",
-  storageBucket: "fir-f51b8.firebasestorage.app",
+  storageBucket: "fir-f51b8.appspot.com",  // ✅ 修正這裡
   messagingSenderId: "904534740293",
   appId: "1:904534740293:web:c571f1f69b004c0b15022c",
   measurementId: "G-5WGVD478EE"
