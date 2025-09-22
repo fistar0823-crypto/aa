@@ -5,6 +5,17 @@ on:
     branches: [ "main" ]
   workflow_dispatch:
 
+# ⚠️ 告訴 GitHub 這是 Pages 部署，需要寫入權限
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# ⚠️ 避免同時跑多個部署
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
